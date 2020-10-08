@@ -26,23 +26,6 @@ jw': 'javanese', 'kn': 'kannada', 'kk': 'kazakh', 'km': 'khmer', 'ko': 'korean',
 'he': 'Hebrew'}
 """
 
-"""
-@bot.message_handler(commands=['change_language'])  # /change_language command
-def change_lg(message):
-    bot.send_message(message.chat.id, 'С какого языка вы хотите перевести?')
-
-
-@bot.message_handler(content_types=['text'])  # translates text of the message to russian
-def f_lg(message):
-    selected_lan = message
-
-
-@bot.message_handler(commands=['change_language'])  # /change_language command
-def change_dest_lg(message):
-    bot.send_message(message.chat.id, 'На какой язык вы хотите перевести?')
-
-"""
-
 
 src_lg = input('С какого языка вы хотите перевести?:')
 dest_lg = input('На какой язык сделать перевод?')
